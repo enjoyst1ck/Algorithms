@@ -19,16 +19,16 @@ int main()
 
 	cin >> k;
 
-	string tekst;
+	string text;
 
-	cin >> tekst;
+	cin >> text;
 	for (int a = 0; a < k; a++)
 	{
-		if ((tekst[a] == 'G' || tekst[a] == 'D'))
+		if ((text[a] == 'G' || text[a] == 'D'))
 		{
-			if (!(tekst[a + 1] == 'G' || tekst[a + 1] == 'D'))
+			if (!(text[a + 1] == 'G' || text[a + 1] == 'D'))
 			{
-				if (tekst[a] == 'G' && direction != 'G')
+				if (text[a] == 'G' && direction != 'G')
 				{
 					for (int i = 0; i < m; i++)
 					{
@@ -49,7 +49,7 @@ int main()
 					}
 					direction = 'G';
 				}
-				else if (tekst[a] == 'D' && direction != 'D')
+				else if (text[a] == 'D' && direction != 'D')
 				{
 					for (int i = 0; i < m; i++)
 					{
@@ -72,11 +72,11 @@ int main()
 				}
 			}
 		}
-		else if ((tekst[a] == 'L' || tekst[a] == 'P'))
+		else if ((text[a] == 'L' || text[a] == 'P'))
 		{
-			if (!(tekst[a + 1] == 'L' || tekst[a + 1] == 'P'))
+			if (!(text[a + 1] == 'L' || text[a + 1] == 'P'))
 			{
-				if (tekst[a] == 'L' && direction != 'L')
+				if (text[a] == 'L' && direction != 'L')
 				{
 					for (int i = 0; i < n; i++)
 					{
@@ -97,7 +97,7 @@ int main()
 					}
 					direction = 'L';
 				}
-				else if (tekst[a] == 'P' && direction != 'P')
+				else if (text[a] == 'P' && direction != 'P')
 				{
 					for (int i = 0; i < n; i++)
 					{
